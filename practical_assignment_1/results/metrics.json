@@ -1,0 +1,33 @@
+{
+  "variant_seed": 42,
+  "training_seed": 0,
+  "generation_seed": 0,
+  "python": "3.13.1",
+  "torch": "2.10.0+cpu",
+  "matplotlib": "3.10.7",
+  "device": "cpu",
+  "cpu_threads": 2,
+  "config": {
+    "vocab_size": 19,
+    "context_size": 64,
+    "d_model": 128,
+    "n_heads": 4,
+    "n_layers": 2,
+    "d_ff": 512,
+    "dropout": 0.1
+  },
+  "parameters": 400640,
+  "steps": 600,
+  "batch_size": 32,
+  "optimizer": "AdamW",
+  "learning_rate": 0.0003,
+  "weight_decay": 0.01,
+  "loss_first_batch": 3.184384822845459,
+  "loss_last_batch": 0.036880478262901306,
+  "generation": {
+    "prompt": "а",
+    "max_new_tokens": 200,
+    "temperature": 0.8,
+    "top_k": 10
+  }
+}

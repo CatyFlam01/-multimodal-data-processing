@@ -1,0 +1,52 @@
+[
+  {
+    "stage": "Исходный вариант",
+    "passed": 7,
+    "total": 17,
+    "failures": [
+      "positional_encoding_matches_formula",
+      "positional_encoding_starts_at_zero_position",
+      "layernorm_normalizes_each_token_separately",
+      "layernorm_is_independent_of_other_batch_elements",
+      "attention_matches_reference_implementation",
+      "attention_weights_sum_to_one_over_keys",
+      "attention_scale_depends_on_sqrt_d_k",
+      "attention_respects_causal_mask",
+      "generate_respects_top_k_one",
+      "generate_switches_model_to_eval"
+    ]
+  },
+  {
+    "stage": "Исправлены позиции",
+    "passed": 9,
+    "total": 17,
+    "failures": [
+      "layernorm_normalizes_each_token_separately",
+      "layernorm_is_independent_of_other_batch_elements",
+      "attention_matches_reference_implementation",
+      "attention_weights_sum_to_one_over_keys",
+      "attention_scale_depends_on_sqrt_d_k",
+      "attention_respects_causal_mask",
+      "generate_respects_top_k_one",
+      "generate_switches_model_to_eval"
+    ]
+  },
+  {
+    "stage": "Исправлена LayerNorm",
+    "passed": 12,
+    "total": 17,
+    "failures": [
+      "attention_matches_reference_implementation",
+      "attention_weights_sum_to_one_over_keys",
+      "attention_scale_depends_on_sqrt_d_k",
+      "attention_respects_causal_mask",
+      "no_future_leak_in_model"
+    ]
+  },
+  {
+    "stage": "Исправлен softmax",
+    "passed": 17,
+    "total": 17,
+    "failures": []
+  }
+]
